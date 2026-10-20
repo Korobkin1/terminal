@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Терминал • Анкетирование</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header><div class="brand">+ <span>Терминал здоровья</span></div><button id="home" class="secondary" hidden>Завершить сеанс</button></header>
+  <main id="app" aria-live="polite"><h1>Загрузка анкет…</h1></main>
+  <section id="receipt" aria-label="Чек для печати" hidden></section>
+  <dialog id="confirm"><h2>Завершить сеанс?</h2><p>Ответы будут удалены с экрана.</p><div class="actions"><button id="cancel-reset" class="secondary">Продолжить анкету</button><button id="reset">Завершить</button></div></dialog>
+  <footer>Ответы хранятся только до завершения сеанса. Анкета не заменяет консультацию врача.</footer>
+</body>
+</html>
